@@ -13,7 +13,8 @@ body {
     color: white;
 }
 
-body *, :root {
+body *,
+:root {
     font-family: "Inter";
     line-height: 160%;
 }
@@ -39,7 +40,7 @@ section {
     padding-top: 4px;
 }
 
-section > div {
+section>div {
     padding: 2rem;
     padding-top: 1.5rem;
     border-radius: 0.5rem;
@@ -79,7 +80,8 @@ form {
     margin: 1.25rem 0;
 }
 
-input, select {
+input,
+select {
     all: unset;
     border: 2px solid #9147FF;
     border-radius: 0.5rem;
@@ -119,8 +121,28 @@ button:disabled {
     color: black;
 }
 
+#aiResponse {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    border-left: 4px solid #43E7AD;
+}
+
+#aiResponse ul {
+    padding-left: 1.5rem;
+    opacity: 0.8;
+}
+
+#aiResponse p {
+    color: white;
+}
+
 .loading {
     animation: pulse 1s infinite;
+}
+
+.hidden {
+    display: none;
 }
 
 @keyframes pulse {
